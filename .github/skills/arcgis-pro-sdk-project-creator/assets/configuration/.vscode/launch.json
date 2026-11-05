@@ -1,0 +1,26 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch ArcGIS Pro ({{SafeProjectName}} Debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "{{ProInstallDirJson}}/bin/ArcGISPro.exe",
+      "cwd": "{{ProInstallDirJson}}/bin/",
+      "args": "/config:{{SafeProjectName}}",
+      "stopAtEntry": false,
+      "preLaunchTask": "build-debug-{{SafeProjectName}}"
+    },
+    {
+      "name": "Launch ArcGIS Pro ({{SafeProjectName}} Release)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "{{ProInstallDirJson}}/bin/ArcGISPro.exe",
+      "cwd": "{{ProInstallDirJson}}/bin/",
+      "args": "/config:{{SafeProjectName}}",
+      "stopAtEntry": false,
+      "preLaunchTask": "build-release-{{SafeProjectName}}"
+    }
+  ]
+}

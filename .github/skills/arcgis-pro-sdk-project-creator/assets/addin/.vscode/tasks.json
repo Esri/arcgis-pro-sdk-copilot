@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-debug-{{SafeProjectName}}",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "{{WorkspaceRelativeProjectPath}}/{{SafeProjectName}}.csproj",
+        "-c",
+        "Debug"
+      ],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build-release-{{SafeProjectName}}",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "{{WorkspaceRelativeProjectPath}}/{{SafeProjectName}}.csproj",
+        "-c",
+        "Release"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

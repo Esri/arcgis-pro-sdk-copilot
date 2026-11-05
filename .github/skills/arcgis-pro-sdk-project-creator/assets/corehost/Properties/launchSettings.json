@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "{{SafeProjectName}}": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}

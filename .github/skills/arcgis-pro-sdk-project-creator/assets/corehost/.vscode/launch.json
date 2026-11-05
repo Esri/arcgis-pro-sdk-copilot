@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch ArcGIS Pro ({{SafeProjectName}} CoreHost Debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-debug-{{SafeProjectName}}",
+      "program": "${workspaceFolder}/{{WorkspaceRelativeProjectPath}}/bin/Debug/net10.0/{{SafeProjectName}}.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/{{WorkspaceRelativeProjectPath}}",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Launch ArcGIS Pro ({{SafeProjectName}} CoreHost Release)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-release-{{SafeProjectName}}",
+      "program": "${workspaceFolder}/{{WorkspaceRelativeProjectPath}}/bin/Release/net10.0/{{SafeProjectName}}.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/{{WorkspaceRelativeProjectPath}}",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

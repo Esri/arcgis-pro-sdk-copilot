@@ -1,0 +1,31 @@
+{
+  "name": "arcgis",
+  "owner": {
+    "name": "Esri, Inc"
+  },
+  "metadata": {
+    "description": "ArcGIS Pro SDK developer plugins for GitHub Copilot.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "arcgis-pro-sdk",
+      "description": "GitHub Copilot agents, skills, and tools for developing ArcGIS Pro SDK for .NET applications.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Esri, Inc"
+      },
+      "repository": "https://github.com/ArcGIS/arcgis-pro-sdk-copilot",
+      "license": "Apache-2.0",
+      "keywords": [
+        "arcgis-pro",
+        "arcgis-pro-sdk",
+        "dotnet",
+        "csharp",
+        "gis",
+        "arcgis"
+      ],
+      "source": "."
+    }
+  ]
+}

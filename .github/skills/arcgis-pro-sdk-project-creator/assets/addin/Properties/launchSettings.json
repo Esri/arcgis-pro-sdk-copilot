@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "{{SafeProjectName}}": {
+      "commandName": "Executable",
+      "executablePath": "{{ProInstallDirJson}}/bin/ArcGISPro.exe",
+      "commandLineArgs": ""
+    }
+  }
+}

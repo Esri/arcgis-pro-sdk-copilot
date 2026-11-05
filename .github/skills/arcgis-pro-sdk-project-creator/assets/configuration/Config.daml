@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="{{SafeProjectName}}.dll"
+        defaultNamespace="{{SafeProjectName}}"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///{{DamlInstallDir}}bin/ArcGIS.Desktop.Framework.xsd">
+
+  <AddInInfo id="{{NewID}}" version="1.0" desktopVersion="{{ArcGISProVersion}}">
+    <Name>{{SafeProjectName}}</Name>
+    <Description>{{SafeProjectName}} description</Description>
+    <Image>Images\ConfigXDesktop32.png</Image>
+    <Author>Author Name</Author>
+    <Company>Acme</Company>
+    <Date>{{Date}}</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+
+  <Configuration>
+    <ConfigurationManager className="ConfigurationManager1"/>
+  </Configuration>
+
+  <modules>
+    <insertModule id="{{SafeProjectName}}_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="{{SafeProjectName}}_Tab1" caption="New Tab">
+          <group refID="{{SafeProjectName}}_Group1"/>
+        </tab>-->
+      </tabs>
+
+      <groups>
+
+      </groups>
+
+      <controls>
+        <!-- add your controls here -->
+      </controls>
+
+    </insertModule>
+  </modules>
+</ArcGIS>
