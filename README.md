@@ -26,7 +26,6 @@ The tree below summarizes tracked repository content; local metadata and empty d
 .
 |-- .gitattributes
 |-- .github/
-|   |-- copilot-instructions.esri_org.md
 |   |-- copilot-instructions.md
 |   |-- plugin/
 |   |   |-- marketplace.json
@@ -74,7 +73,7 @@ The tree below summarizes tracked repository content; local metadata and empty d
 
 ## What's New
 
-Copilot ai repo for ArcGIS Pro 3.8
+Copilot AI repo for ArcGIS Pro 3.8.
 
 ## Installation
 
@@ -93,7 +92,7 @@ For marketplace installation, register the ArcGIS marketplace once:
 
 ```bash
 # Register the public ArcGIS marketplace
-copilot plugin marketplace add ArcGIS/arcgis-pro-sdk-copilot
+copilot plugin marketplace add Esri/arcgis-pro-sdk-copilot
 ```
 
 List the registered marketplaces and browse the ArcGIS catalog:
@@ -237,7 +236,7 @@ Install the plugin once in your user profile to use it from any VS Code
 workspace:
 
 ```bash
-copilot plugin marketplace add ArcGIS/arcgis-pro-sdk-copilot
+copilot plugin marketplace add Esri/arcgis-pro-sdk-copilot
 copilot plugin install arcgis-pro-sdk@arcgis
 ```
 

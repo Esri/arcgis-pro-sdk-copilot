@@ -45,10 +45,6 @@ Use this skill only for an existing ArcGIS Pro SDK Add-in, Managed Configuration
 9. Repeat steps 5-8 for the next approved project.
 10. Report the approved projects, ArcGIS Pro installation, changed files, backup directories, framework results when requested, and build results.
 
-## Evaluation
-
-Run [`Test-ProReferenceScripts.ps1`](./tests/Test-ProReferenceScripts.ps1) after changing the bundled scripts. It creates isolated temporary fixtures and leaves workspace files unchanged. See [`evaluations.md`](./evaluations/evaluations.md) for the scenarios, assertions, latest execution evidence, and untested boundaries.
-
 ## Safety Rules
 
 - Update any approved project and its adjacent `Config.daml` or `Config.xml`, project `.vscode/launch.json`, project-root `launch.json`, `Properties/launchSettings.json`, and workspace `.vscode/launch.json` files.
